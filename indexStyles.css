@@ -1,0 +1,254 @@
+/* fonts */
+@font-face {
+  font-family: Sans Culottes;
+  src: url(./fonts/SANSC___.TTF);
+}
+@font-face {
+  font-family: Chipotle;
+  src: url(./fonts/Chipotle-Regular.otf);
+}
+
+@font-face {
+  font-family: Gotham Light;
+  src: url(./fonts/Gotham-Light.otf);
+}
+/* globals */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Sans Culottes;
+}
+p {
+  letter-spacing: 0.3px;
+}
+/* page styles */
+
+/* header */
+header {
+  height: 7vh;
+  background-color: black;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+}
+
+li > a {
+  text-decoration: none;
+  text-decoration-thickness: 2px;
+  color: white;
+}
+
+li > a:visited {
+  color: white;
+}
+
+li > a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.navlink {
+  list-style-type: none;
+  margin: 0 1rem;
+  color: white;
+}
+
+/* End of header */
+
+/* hero div */
+
+.hero-img {
+  height: 93vh;
+  background-image: url(./images/hero-compressed.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-bottom: 8px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.darken-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.45);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  margin-top: -5rem;
+}
+
+.main-logo {
+  font-family: Chipotle;
+  font-size: 7rem;
+  color: white;
+}
+
+.logo-subtext {
+  font-family: Gotham Light;
+  color: white;
+  align-self: flex-end;
+}
+
+.welcome-msg {
+  font-size: 2.75rem;
+  color: white;
+  z-index: 1;
+  margin-top: -5rem;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.chipotle {
+  font-family: Chipotle;
+}
+
+.now-open {
+  color: black;
+  font-size: 2rem;
+  z-index: 1;
+  margin-top: -15rem;
+  background-color: orange;
+  border: 3px solid black;
+  padding: 0.75rem 1rem;
+}
+/* end of hero */
+/* menu / order diamonds */
+.order {
+  height: 90vh;
+  background-image: url(./images/burrito-bowl-compressed.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.darkened-square {
+  border: 6px solid white;
+  background-color: rgb(0, 0, 0, 0.6);
+  height: 250px;
+  width: 250px;
+  margin: 7rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
+
+.darkened-square:nth-of-type(1) {
+  align-self: flex-start;
+}
+.darkened-square:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.darkened-square > a {
+  color: white;
+  font-size: 1.5rem;
+  font-family: Sans Culottes;
+  text-decoration: none;
+  transform: rotate(-45deg);
+}
+
+.darkened-square > a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+/* end  */
+
+/* delivery/loyalty paragraphs */
+
+.delivery-loyalty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.order-deets {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.text-wrapper a {
+  color: black;
+}
+.text-wrapper a:visited {
+  color: black;
+}
+
+.pad-top {
+  padding-top: 2rem;
+}
+
+.deliveroo {
+  color: #00cdcb;
+}
+
+.tsandcs {
+  color: #bbb;
+  font-size: 0.6rem;
+}
+/* footer */
+.footer {
+  height: 36vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location > p {
+  padding-top: 1rem;
+}
+
+.opening-hours td {
+  padding-right: 1rem;
+}
+
+.address {
+  font-size: 0.75rem;
+}
+
+.img {
+  max-width: 50%;
+  max-height: 100%;
+}
+
+img {
+  object-fit: cover;
+}

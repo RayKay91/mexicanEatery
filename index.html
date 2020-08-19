@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="indexStyles.css" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <title>Burreato Mexican Eatery</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="navlink"><a href="/">Home</a></li>
+          <li class="navlink"><a href="#ourfood">Our Food</a></li>
+          <li class="navlink"><a href="#order">Menu</a></li>
+
+        </ul>
+      </nav>
+    </header>
+<section>
+    <div class="hero-img" title="scrumdiddlyumptious burritos image">
+      <div class="darken-hero"></div>
+      <div class="logo">
+        <h1 class="main-logo">Burr<span class="orange-text chipotle">eat</span>o</h1>
+        <p class="logo-subtext">Mexican Eatery</p>
+      </div>
+      <h2 class="welcome-msg"
+        ><span class="orange-text">EAT</span>-O YOUR BURR<span
+          class="orange-text"
+          >EAT</span
+        >O!</h2
+      >
+      <div class="star-wrapper">
+       
+      </div>
+
+            <p class='now-open'>NOW OPEN!</p>
+
+      </div>
+    </div>
+</section>
+    <section>
+        <div class="order" title='burrito bowl'>
+            <div class="darkened-square">
+                <a href="#order">Ready To Order?</a>
+            </div>
+            <div class="darkened-square">
+                <a href="#order">Wanna Check The Menu?</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <a name="order"></a>
+        <div class='delivery-loyalty'>
+                <div class="text-wrapper">
+
+                    <h3 class='order-deets'>You can now order on <span class='deliveroo'>Deliveroo</span>!</h3>
+                    <p>We've worked with our partners at Deliveroo to make sure you can enjoy our food from the comfort of your home and office. <a href='#' onclick="alert('This would take you to the Deliveroo website')">Order now!</a></p>
+                </div>
+            <div class="text-wrapper pad-top">
+
+                <h3 class="order-deets">How does getting your food for <span class='orange-text'>FREE</span> sound?</h3>
+                <p>You can grab a free burrito by filling your loyalty card! Simply present the card upon each purchase and it'll be stamped. 
+                    Once you've collected enough stamps, hand over the card instead of cash to get a free burrito!</p>
+                    <p><span class='tsandcs'>Please note terms and conditions apply</span></p>
+                </div>
+
+    </section>
+    <section>
+      <a name='ourfood'></a>
+    </section>
+
+
+    <footer>
+        <div class='footer pad-top'>
+            <div class="opening-hours">
+                <p>Opening Hours</p>
+                <table>
+                    <tr>
+                        <td>Monday</td>
+                        <td>11:00-22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>11:00-22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>11:00-22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>11:00-22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>11:00-23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>11:00-23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed  😢</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="location">
+                <div id='map' style='width: 300px; height: 200px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoicmF5cmF5OTEiLCJhIjoiY2s0YTB3NjJpMDBrbzNrbXV3dG5xaXExbSJ9.7Yl69-BXNNw5KriCMHki1g';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [-0.747372,51.629124],
+zoom: 18,
+});
+
+map.addControl(new mapboxgl.NavigationControl())
+</script>
+        <p class='address'>
+            32 Crendon St, High Wycombe
+        </p>
+            </div>
+
+        </div>
+    </footer>
+
+  </body>
+</html>
